@@ -1,0 +1,9 @@
+cuando abra el .py una ventana tipo temporizador podría salir
+
+starter = variable que va a ir incrementando segundo a segundo hasta que llegue a 25min. 
+qué tal min a min? omg podría bloquear la compu seguido hasta que pasen los 3 minutos? ver después.
+max_time = 25 
+cuando starter == max_time: 
+	--cerrar sesión 
+	...que tal un while? bien violento, o una función recursiva que le agregue otros 25min a max_time cada vez que starter == max_time + 1 ???
+ 
