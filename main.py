@@ -4,7 +4,7 @@ import os
 
 starter = 0
 mins = 00
-max_time = 1
+max_time = 25
 form = sg.FlexForm('Mindsaver', auto_size_text=True)
 output_element = sg.Text('', size=(8, 2), font=('Helvetica', 20))
 
