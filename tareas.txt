@@ -1,9 +1,13 @@
-cuando abra el .py una ventana tipo temporizador podría salir
+cuando abra el .py una ventana tipo temporizador podria salir
 
-starter = variable que va a ir incrementando segundo a segundo hasta que llegue a 25min. 
-qué tal min a min? omg podría bloquear la compu seguido hasta que pasen los 3 minutos? ver después.
-max_time = 25 
-cuando starter == max_time: 
-	--cerrar sesión 
-	...que tal un while? bien violento, o una función recursiva que le agregue otros 25min a max_time cada vez que starter == max_time + 1 ???
- 
+main: 
+	- starter debe ir cambiando de valor y cuando llegue a max debe reiniciarse  
+	- max debe mantenerse
+	- la funcion de bloqueo debe se aplicada solo una vez, no se si seria malo si se 
+		mantiene por mas de una vez cerrando y cerrando, pero podria probar para ver
+		
+
+gui:
+	-deberia aparecer el tiempo transcurrido desde que se reinicio el reloj/se abrio la app
+	-deberia cerrarse automaticamente cuando la compu se bloquee
+	- el reloj debe volver a 0 

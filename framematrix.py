@@ -15,7 +15,6 @@ form_rows = [[sg.Text('Tiempo transcurrido desde el inicio del programa (la comp
 form.LayoutAndRead(form_rows, non_blocking=True)
 
 
-# tratar de ver como hacer que el os.system pueda mantenerse por una cantidad de minutos 
 
 while mins < max_time:
     output_element.Update('{:02d}:{:02d}'.format(mins, starter))
@@ -29,7 +28,7 @@ while mins < max_time:
         mins += 1 
     if mins == max_time:
         output_element.Update("H3LL0 FR13ND")
-        
+         
         '''os.system("rundll32.exe user32.dll, LockWorkStation")
         mins = 0''' 
 
