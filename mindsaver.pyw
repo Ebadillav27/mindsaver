@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 import time
-import os
+import subprocess
 
 starter = 0
 mins = 00
@@ -8,7 +8,7 @@ max_time = 25
 form = sg.FlexForm('Mindsaver', auto_size_text=True)
 output_element = sg.Text('', size=(8, 2), font=('Helvetica', 20))
 
-form_rows = [[sg.Text('Tiempo transcurrido desde el inicio del programa (la computadora se bloqueara cuando llegue a {} minutos'.format(max_time))],
+form_rows = [[sg.Text('Tiempo transcurrido desde el inicio del programa (la computadora se bloqueara cuando llegue a {} minutos)'.format(max_time))],
              [output_element],
              [sg.SimpleButton('Cerrar')]]
 
@@ -29,7 +29,7 @@ while mins <= max_time:
     if mins == max_time:
         output_element.Update("H3LL0 FR13ND")
         for i in range(0,15):
-            os.system("rundll32.exe user32.dll, LockWorkStation")
+            subprocess.call("rundll32.exe user32.dll, LockWorkStation", shell = False)
             time.sleep(1)
         mins = 0
 
